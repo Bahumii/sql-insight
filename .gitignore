@@ -1,0 +1,29 @@
+# .NET build output
+**/bin/
+**/obj/
+
+# Visual Studio / VS Code local files
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local development configuration may contain connection strings
+**/appsettings.Development.json
+
+# React / Node dependencies and generated builds
+**/node_modules/
+**/dist/
+
+# Test and coverage output
+**/TestResults/
+**/coverage/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
