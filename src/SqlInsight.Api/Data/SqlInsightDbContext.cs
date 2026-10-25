@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using SqlInsight.Api.Models;
 
 namespace SqlInsight.Api.Data;
 
@@ -17,4 +18,10 @@ public class SqlInsightDbContext : DbContext
         : base(options)
     {
     }
+
+    /// <summary>
+    /// Represents the OperationLogs table.
+    /// EF Core uses this property to query and save operation log records.
+    /// </summary>
+    public DbSet<OperationLog> OperationLogs => Set<OperationLog>();
 }
